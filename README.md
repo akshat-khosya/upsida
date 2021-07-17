@@ -1,5 +1,5 @@
 # README #
-I am pankaj : I am connected and developing
+I am pankaj singh rana : I am connected and developing
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
