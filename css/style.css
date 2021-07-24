@@ -300,4 +300,6 @@ a{
   }
   .btn{
       border-radius: 50px;
+      font-size: 32px;
+      padding: 4px 30px;
   }
