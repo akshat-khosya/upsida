@@ -205,6 +205,11 @@ a{
         margin-top: 0 !important;
         margin-right: 5% ;
     }
+    .btn{
+        border-radius: 50px;
+        font-size: 22px;
+        padding: 4px 20px;
+    }
 }
 @media (max-width:600px){
     .eservice__login--form{
@@ -218,6 +223,11 @@ a{
     .login-button{
         margin-top: 0 !important;
       
+    }
+    .btn{
+        border-radius: 50px;
+        font-size: 18px;
+        padding: 4px 10px;
     }
 }
 .form__input:placeholder-shown + .form__label{
@@ -278,19 +288,11 @@ a{
 }
 /* login button */
 .login-button{
-    
-  color: var(--main-400);
-  border-radius: 100px !important;
-  margin-top: 4%;
-  padding: 1rem 1rem;
+    padding: 4px 30px;
   font-size: 22px;
+  font-size: 32px !important;
 }
-.login-button:hover{
-    color: var(--white);
-    background-color: var(--main-400);
-    
-  }
-  
+
   /* buttons*/
   .eservice__buttons{
       margin-top: 2%;
@@ -300,6 +302,6 @@ a{
   }
   .btn{
       border-radius: 50px;
-      font-size: 32px;
+      font-size: 22px;
       padding: 4px 30px;
   }
