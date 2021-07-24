@@ -41,9 +41,7 @@ body{
 body > *{
     width: 100%;
 }
-.btn{
-    border-radius: 500px;
-}
+
 .material-icons{
     cursor: pointer;
     user-select: none;
@@ -210,7 +208,7 @@ a{
 }
 @media (max-width:600px){
     .eservice__login--form{
-        margin-top: 20vh;
+        margin-top: 10vh;
         margin-left: 10%;
     }
     
@@ -301,5 +299,5 @@ a{
       margin: 1% 1% 1% 1%;
   }
   .btn{
-      border-radius: 100px;
+      border-radius: 50px;
   }
