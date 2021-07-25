@@ -70,6 +70,7 @@ darkButton.onclick = () => {
     lightButton.classList.remove("dispn");
     document.querySelector(".up-logo img").setAttribute("src", "./images/up_White.png");
     document.querySelector(".footer-img img").setAttribute("src", "./images/up_White.png");
+    document.querySelector(".icon_footer").setAttribute("src", "./images/outline_link_white_24dp.png");
 };
 
 lightButton.onclick = () => {
@@ -80,6 +81,7 @@ lightButton.onclick = () => {
     darkButton.classList.remove("dispn");
     document.querySelector(".up-logo img").setAttribute("src", "./images/up_Black.png");
     document.querySelector(".footer-img img").setAttribute("src", "./images/up_Black.png");
+    document.querySelector(".icon_footer").setAttribute("src", "./images/outline_link_white_24dp.png");
 };
 let sideBar = document.querySelector(".side-bar");
 let navBar = document.querySelector(".nav-bar");

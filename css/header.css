@@ -26,7 +26,7 @@
 }
 .header-center{
     position: relative;
-    left: 10rem;
+    left: 1rem;
 }
 .award-img{
     width: 60%;
@@ -34,8 +34,8 @@
 .up-logo, .award-img, .header-btn-link{
     opacity: 1;
     visibility: visible;
-    
-    
+    width: auto;
+    height: auto;
 }
 .side-bar-expand{
     display: flex;
@@ -44,7 +44,6 @@
 }
 .side-bar-expand-md, .side-bar-expand-sm{
     font-size: 2rem;
-    margin: 0.75rem;
     padding: 0.75rem;
     border-radius: 500px;
     opacity: 0;
@@ -65,20 +64,15 @@
     max-height: var(--head-height);
     max-width: 100%;
 }
+.header-center{
+    display: flex;
+    flex-flow: row;
+}
 .header-center img{
     filter: brightness(var(--center-img-brightness));
-}
-.header-right{
-    display: flex;
-    justify-content: space-around;
-}
-.header-right *{
-    margin: 0 0.25rem;
-}
-.header-right .calendar *{
-    font-size: 0.75rem;
-    margin: 0;
-    width: 6rem;
+    width: auto;
+    max-height: var(--head-height);
+    max-width: 50%;
 }
 .header-btn-link{
     display: flex;
@@ -90,6 +84,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .header-center img{
+        max-width: 90%;
+    }
+    .empower{
+        display: none;
     }
     .up-logo, .award-img, .header-btn-text, .calendar{
         opacity: 0;
