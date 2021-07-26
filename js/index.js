@@ -17,7 +17,33 @@ function currentTime() {
     min = updateTime(min);
     sec = updateTime(sec);
     curr_date = updateTime(curr_date);
-    document.querySelector(".day").innerHTML = `${day_name[day]}`;
+    document.querySelector(".day").innerHTML = `${day_name[day]}`;darkButton.onclick = () => {
+    removeAllClasses();
+    body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+    darkButton.classList.add("dispn");
+    lightButton.classList.remove("dispn");
+    document.querySelector(".up-logo img").setAttribute("src", "./images/up_White.png");
+    document.querySelector(".footer-img img").setAttribute("src", "./images/up_White.png");
+    for(let i=0;i<17;i++){
+        document.querySelectorAll(".icon_footer")[i].setAttribute("src", "./images/outline_link_black_24dp.png");
+    }
+    
+};
+
+lightButton.onclick = () => {
+    removeAllClasses();
+    body.classList.add("light");
+    localStorage.setItem("theme", "light");
+    lightButton.classList.add("dispn");
+    darkButton.classList.remove("dispn");
+    document.querySelector(".up-logo img").setAttribute("src", "./images/up_Black.png");
+    document.querySelector(".footer-img img").setAttribute("src", "./images/up_Black.png");
+    for(let i=0;i<17;i++){
+        document.querySelectorAll(".icon_footer")[i].setAttribute("src", "./images/outline_link_white_24dp.png");
+    }
+    
+};
     document.querySelector(".date").innerHTML = `${curr_date}`;
     document.querySelector(".month").innerHTML = `${month_name[mon]}`;
     document.querySelector(".year").innerHTML = `${year}`;
@@ -69,11 +95,9 @@ darkButton.onclick = () => {
     darkButton.classList.add("dispn");
     lightButton.classList.remove("dispn");
     document.querySelector(".up-logo img").setAttribute("src", "./images/up_White.png");
-    document.querySelector(".footer-img img").setAttribute("src", "./images/up_White.png");
     for(let i=0;i<17;i++){
-        document.querySelectorAll(".icon_footer")[i].setAttribute("src", "./images/outline_link_black_24dp.png");
+        iconFooter[i].setAttribute("src", "./images/outline_link_white_24dp.png");
     }
-    
 };
 
 lightButton.onclick = () => {
@@ -83,12 +107,11 @@ lightButton.onclick = () => {
     lightButton.classList.add("dispn");
     darkButton.classList.remove("dispn");
     document.querySelector(".up-logo img").setAttribute("src", "./images/up_Black.png");
-    document.querySelector(".footer-img img").setAttribute("src", "./images/up_Black.png");
     for(let i=0;i<17;i++){
-        document.querySelectorAll(".icon_footer")[i].setAttribute("src", "./images/outline_link_white_24dp.png");
-    }
-    
+        iconFooter[i].setAttribute("src", "./images/outline_link_black_24dp.png");
+    }  
 };
+let iconFooter=document.querySelectorAll(".icon_footer");
 let sideBar = document.querySelector(".side-bar");
 let navBar = document.querySelector(".nav-bar");
 let navLink = document.querySelectorAll(".nav-list .nav-link");
